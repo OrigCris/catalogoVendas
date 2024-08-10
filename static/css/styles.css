@@ -1,33 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Yellowtail');
-
+/* Estilos básicos */
 body {
-    padding: 0%;
-    margin: 0%;
-    font-family: Helvetica,Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("/static/images/foto.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed; 
     background-size: cover; 
     background-position: center;
     height: 100vh;
-       
-    
-}
-ul {
-    list-style: none;
     padding: 0;
-    margin: 0%;
-}
-ul li {
-    display: inline;
+    margin: 0;
 }
 
-a {
-    text-decoration: none;
-    transition-duration: 200ms
-}
-
-/*Style NAv*/
+/* Navegação */
 .nav {
     width: 100%;
     height: 110px;
@@ -43,32 +27,40 @@ a {
     background-color: #FFF;
 }
 
-    .nav-interno ul li a {
-        color: rgb(88, 88, 88);
-        font-size: 16px;
-        font-weight: 100;
-        margin: 0 50px;
-        
-    }
-        .nav-interno ul li a:hover {
-            color: rgb(160, 128, 190);
-            transition: 200ms
-        } 
+.nav-interno ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
-    ul li a:nth-child(6) {
-        border: 2px solid rgb(160, 128, 190);
-        color: rgb(160, 128, 190);
-        padding: 15px 20px;
-        
-        }
-        
-        ul li a:nth-child(6):hover{
-            background-color: rgb(241, 236, 236);
-            color: rgb(88, 88, 88);
-        }
+.nav-interno ul li {
+    display: inline;
+}
 
-/*FIM Style NAv*/
+.nav-interno ul li a {
+    color: rgb(88, 88, 88);
+    font-size: 16px;
+    font-weight: 100;
+    margin: 0 50px;
+}
 
+.nav-interno ul li a:hover {
+    color: rgb(160, 128, 190);
+    transition: 200ms;
+}
+
+.nav-interno ul li a:nth-child(6) {
+    border: 2px solid rgb(160, 128, 190);
+    color: rgb(160, 128, 190);
+    padding: 15px 20px;
+}
+
+.nav-interno ul li a:nth-child(6):hover {
+    background-color: rgb(241, 236, 236);
+    color: rgb(88, 88, 88);
+}
+
+/* Seção Principal */
 .section {
     width: 100%;
     height: 800px;
@@ -78,78 +70,106 @@ a {
     color: white;
 }
 
-    .section h1 {
-        font-size: 60px;
-        font-family: 'Garamond', cursive;
-        font-weight: 100;
-        word-break: break-all;
-        
-    }
-        div{ 
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        span {
-            width: 60px;
-            height: 5px;
-            background-color: rgb(255, 255, 255);
-            display: block;
-            margin: 0 30px;
-        }
-    .section h2 {
-        font-size: 80px;
-        margin-bottom: 20px;
-        font-weight: 100;
+.section h1 {
+    font-size: 60px;
+    font-family: 'Garamond', cursive;
+    font-weight: 100;
+    word-break: break-word;
+}
 
-    }
-    .section h3 {
-        font-size: 16px;
-        margin-bottom: 83px;
-        font-family: monospace;
-    }
-    .section .button {
-        width: 170px;
-        height: 45px;
-        background-color: #7B6392;
-        color: white;
-        padding: 15px 30px; 
-        
-    }
-        .button:hover {
-            background-color: rgb(97, 76, 117);
-        }
+.section h2 {
+    font-size: 80px;
+    margin-bottom: 20px;
+    font-weight: 100;
+}
 
-footer{
+.section h3 {
+    font-size: 16px;
+    margin-bottom: 83px;
+    font-family: monospace;
+}
+
+.section .button {
+    width: 170px;
+    height: 45px;
+    background-color: #7B6392;
+    color: white;
+    padding: 15px 30px; 
+}
+
+.button:hover {
+    background-color: rgb(97, 76, 117);
+}
+
+/* Rodapé */
+footer {
     background-color: #2E2E2E;
     width: 100%;
     height: 60px;
     color: white;
     line-height: 60px;
- }
-    .footer-interno {
-        max-width: 972px;
-        width: 100%;
-        margin: auto;
-        height: 60px;
+}
 
+.footer-interno {
+    max-width: 972px;
+    width: 100%;
+    margin: auto;
+    height: 60px;
+}
+
+.direitos-autorais {
+    float: left;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.menu-social {
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-social a {
+    margin-left: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+/* Consultas de mídia para dispositivos móveis */
+@media (max-width: 768px) {
+    .nav-interno ul li {
+        display: block;
+        margin: 10px 0;
     }
 
-        .direitos-autorais {
-            float: left;
-            font-size: 14px;
-            font-weight: 100;
-            height: 60px;
-        }
-        .menu-social{
-            float: right;
-            margin:0;
-            padding: 0;
-            height: 60px;
-        }
-            .menu-social a {
-                margin-left: 20px;
-                font-size: 20px;
-                color: white;
-            }
-        
+    .nav-interno ul li a {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .section h1 {
+        font-size: 40px;
+    }
+
+    .section h2 {
+        font-size: 50px;
+    }
+
+    .section h3 {
+        font-size: 14px;
+    }
+
+    .section .button {
+        width: 150px;
+        height: 40px;
+    }
+
+    .footer-interno {
+        text-align: center;
+    }
+
+    .direitos-autorais, .menu-social {
+        float: none;
+        margin: 10px 0;
+    }
+}
