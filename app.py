@@ -1,10 +1,15 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, redirect, url_for
 
 app = Flask(__name__)
 
 @app.route('/')
-def home():
+def form():
     return render_template('index.html')
+
+@app.route('/index', methods=['POST'])
+def confirm():
+    name = request.form['name']
+    return render_template('confirm.html', name=name)
 
 if __name__ == '__main__':
     app.run(debug=True)
