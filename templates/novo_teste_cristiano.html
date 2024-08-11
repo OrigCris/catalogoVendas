@@ -1,44 +1,85 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bella e Alberto</title>
+    <title>Document</title>
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/estilo.css') }}">
 </head>
-<body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <a href="#">Logo</a>
-            </div>
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Nossa história</a></li>
-                <li><a href="#">Como chegar</a></li>
-                <li><a href="#">Confirmar presença</a></li>
-                <li><a href="#">Lista de presentes</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="section">        
-            <div>
-                <span></span>
-                <H1>Tatiane & Cristiano</H1>
-                <span></span>
-                </div>
-                <h2>VAMOS NOS CASAR</h2>
-                <h3>07 de dez de 2024 | Espaço Miralt</h3>
-                <a class="button" href="/">CONFIRMAR PRESENÇA</a>
-            </div>
-        </section>
-    </main>
+
+<body class="hero-anime">	
+
+	<div class="navigation-wrap bg-light start-header start-style">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<nav class="navbar navbar-expand-md navbar-light">
+					
+						<a class="navbar-brand" href="#" target="_blank">T&C</a>	
+						
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav ml-auto py-4 py-md-0">
+								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+									<a class="nav-link" href="#">Nossa história</a>
+								</li>
+								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+									<a class="nav-link" href="#">Cerimônia</a>
+								</li>
+								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+									<a class="nav-link" href="#">Confirme sua presença</a>
+								</li>
+								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+									<a class="nav-link" href="https://noivos.casar.com/tatiane-cristiano-07-12#/presentes">Lista de presentes</a>
+								</li>
+							</ul>
+						</div>
+						
+					</nav>		
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section full-height">
+		<div class="absolute-center">
+			<div class="section">
+				<div class="container">
+					<div class="row custom-row">
+						<div class="col-md-6">
+							<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+								<div class="carousel-inner">
+								  	<div class="carousel-item active" data-bs-interval="500">
+										<img src="{{ url_for('static', filename='images/foto1.jpeg') }}" class="d-block w-100" alt="...">
+								  	</div>
+								  	<div class="carousel-item" data-bs-interval="4000">
+										<img src="{{ url_for('static', filename='images/foto2.jpeg') }}" class="d-block w-100" alt="...">
+								  	</div>
+								  	<!-- Adicione mais itens conforme necessário -->
+							  	</div>							  
+							</div>
+						</div>
+						<div class="col-md-6">
+							<h1><span>T</span><span>a</span><span>t</span><span>i</span><span>a</span><span>n</span><span>e</span><br>
+								<span>&</span><br>
+							<span>C</span><span>r</span><span>i</span><span>s</span><span>t</span><span>i</span><span>a</span><span>n</span<span>o</span></h1>
+						</div>	
+					</div>
+				</div>		
+			</div>
+		</div>
+	</div>
+	<div class="my-5 py-5">
+	</div>
+  
+<!-- Link to page
+================================================== -->
+
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+	<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>
