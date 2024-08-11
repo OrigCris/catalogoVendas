@@ -3,13 +3,12 @@ from flask import Flask, render_template, request, redirect, url_for
 app = Flask(__name__)
 
 @app.route('/')
-def form():
+def index():
     return render_template('index.html')
 
-@app.route('/index', methods=['POST'])
-def confirm():
-    name = request.form['name']
-    return render_template('confirm.html', name=name)
+@app.route('/teste')
+def form():
+    return render_template('novo_teste_cristiano.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

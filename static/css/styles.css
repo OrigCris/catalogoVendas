@@ -1,14 +1,19 @@
 /* Estilos básicos */
+/* Imagem padrão */
 body {
-    font-family: Helvetica, Arial, sans-serif;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("/static/images/foto.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed; 
-    background-size: cover; 
+    background-size: cover;
     background-position: center;
     height: 100vh;
-    padding: 0;
-    margin: 0;
+}
+
+/* Imagem para telas menores */
+@media (max-width: 768px) {
+    body {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("/static/images/foto-mobile.jpg");
+    }
 }
 
 /* Navegação */

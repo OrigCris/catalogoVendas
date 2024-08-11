@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bella e Alberto</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilo.css') }}">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">Logo</a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Nossa história</a></li>
+                <li><a href="#">Como chegar</a></li>
+                <li><a href="#">Confirmar presença</a></li>
+                <li><a href="#">Lista de presentes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="section">        
+            <div>
+                <span></span>
+                <H1>Tatiane & Cristiano</H1>
+                <span></span>
+                </div>
+                <h2>VAMOS NOS CASAR</h2>
+                <h3>07 de dez de 2024 | Espaço Miralt</h3>
+                <a class="button" href="/">CONFIRMAR PRESENÇA</a>
+            </div>
+        </section>
+    </main>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
